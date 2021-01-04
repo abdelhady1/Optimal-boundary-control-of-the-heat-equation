@@ -9,8 +9,9 @@ c = 460.0                           # Specific heat capacitivity
 ρ = 7800.0                          # Material density
 L = 0.1                             #Length and width of body are assumed equivalent
 α = λ / (c*ρ)                       # Diffusivity
-h = L / (N - 1)                     #Δx = Δy = h
 N = 11                              # Number of Discretization points N_x = N_y
+h = L / (N - 1)                     #Δx = Δy = h
+
 
 #System , input and output matrices: θ' = Aθ(t) + Bu(t)
 A = spdiagm(0 => -4*ones(N^2))
